@@ -1,0 +1,87 @@
+@import './mixins';
+@import './variables';
+
+body {
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(108, 92, 197)
+}
+
+.task-title {
+  text-align: center;
+  font-size: 26px;
+  color: rgb(97, 72, 25)
+}
+
+.container {
+  margin-bottom: 40px
+}
+
+.question {
+  @include question-style;
+}
+
+.wrapper {
+  @include wrapper-style;
+}
+
+.button-answer {
+  @include button-style;
+
+}
+
+.button-answer:hover {
+  background-color: $primary-color;
+}
+
+.clicked {
+  background-color: $changed-color;
+  color: aliceblue;
+}
+
+.result-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.result-buttons__item {
+  @include result-buttons__item;
+}
+
+.result-buttons__item:hover {
+  border: none;
+  background: rgb(187, 86, 47);
+  color: #f2f2f2;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.result-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.result {
+  @include result-style;
+}
+
+.modal-close {
+  padding: 6px 14px;
+  font-size: 20px;
+  border-radius: 5px;
+  border-color: rgb(209, 207, 205);
+}
+
+.modal-close:hover {
+  cursor: pointer;
+  background-color: antiquewhite;
+}

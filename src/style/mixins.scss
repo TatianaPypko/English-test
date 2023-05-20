@@ -1,0 +1,48 @@
+@mixin button-style {
+  width: 300px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: rgb(109, 103, 95);
+  background-color: rgb(191, 198, 201);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@mixin wrapper-style {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin question-style {
+  color: rgb(163, 110, 41);
+  text-align: center;
+  font-size: 22px;
+}
+
+@mixin result-buttons__item {
+  margin-left: 10px;
+  padding: 7px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 22px;
+  border: none;
+  background-color: rgb(243, 153, 118);
+
+}
+
+@mixin result-style {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(228, 222, 199);
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px rgba(221, 221, 221, 1);
+  font-size: 20px;
+  text-align: center;
+  color: rgb(75, 78, 78);
+}
