@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-function AnswerOption({ answers, correctAnswer, setCounter, counter, isReset, key }) {
+function AnswerOption({ answers, correctAnswer, setCounter, counter, isReset }) {
   const [disabledIndex, setDisabledIndex] = useState([]);
   const [clickedIndex, setClickedIndex] = useState(-1);
 
   useEffect(() => {
     setDisabledIndex([]);
     setClickedIndex(-1);
-  }, [isReset, key]);
+  }, [isReset]);
 
   function chooseOption(event, index) {
     if (event.target.value === correctAnswer) {
@@ -40,7 +40,6 @@ AnswerOption.propTypes = {
   setCounter: PropTypes.func.isRequired,
   counter: PropTypes.number.isRequired,
   isReset: PropTypes.bool.isRequired,
-  key: PropTypes.string.isRequired,
 };
 
 export default AnswerOption;
