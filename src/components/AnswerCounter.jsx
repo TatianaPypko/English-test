@@ -39,7 +39,7 @@ function AnswerCounter({ counter, showModal, setShowModal, onReset }) {
 
 AnswerCounter.propTypes = {
       counter: PropTypes.number,
-      showModal: PropTypes.bool.isRequired,
+      showModal: PropTypes.bool,
       setShowModal: PropTypes.func.isRequired,
       onReset: PropTypes.func.isRequired,
 };

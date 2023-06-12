@@ -15,7 +15,7 @@ function Buttons({ onReset, setShowModal, showModal }) {
 Buttons.propTypes = {
   onReset: PropTypes.func.isRequired,
   setShowModal: PropTypes.func.isRequired,
-  showModal: PropTypes.bool.isRequired,
+  showModal: PropTypes.bool
 };
 
 export default Buttons;
